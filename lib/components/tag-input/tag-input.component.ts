@@ -60,6 +60,13 @@ export interface AutoCompleteItem {
     </form>
   `,
   styles: [`
+    :host .ng2-tag-input-form {
+      display: inline;
+    }
+
+    :host .ng2-tag-input-field {
+      border: 0;
+    }
   `],
   providers: [
     {provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => TagInputComponent), multi: true},
